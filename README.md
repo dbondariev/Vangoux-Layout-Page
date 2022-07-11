@@ -15,3 +15,5 @@
 ### Author
 
 Dima Bondariev
+
+Have Fun With Code 👨‍💻 
