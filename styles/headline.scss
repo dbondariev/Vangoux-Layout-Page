@@ -1,0 +1,88 @@
+.headline {
+  padding: 80px 65px 0px 65px;
+
+  @include for-up {
+    padding-top: 150px;
+    padding: 150px 0px 0px 0px;
+  }
+
+  &__title {
+    max-width: 480px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: $colorMain;
+    @include for-up {
+      max-width: 680px;
+    }
+  }
+
+  &__description {
+    position: relative;
+    max-width: 480px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    padding-top: 21px;
+    z-index: 1;
+    @include for-up {
+      max-width: 600px;
+    }
+  }
+
+  &__upload-btn {
+    margin-top: 39px;
+    width: 300px;
+    height: 50px;
+    @include for-up {
+      display: none;
+    }
+
+    &_for-desctop {
+      display: none;
+      @include for-up {
+        display: flex;
+      }
+    }
+  }
+
+  &__img-content {
+    transform: translateX(-60px);
+    padding-top: 80px;
+    @include for-up {
+      position: absolute;
+      right: -45px;
+      top: 200px;
+    }
+  }
+
+  &__img {
+    // max-width: 100%;
+  }
+
+  &__banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin: -62px -85px;
+    z-index: 1;
+    background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png')
+      center/cover no-repeat;
+    @include for-up {
+      display: none;
+    }
+  }
+
+  &__banner-title {
+    max-width: 520px;
+    text-align: center;
+    line-height: 200%;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

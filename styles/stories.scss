@@ -1,0 +1,57 @@
+.stories {
+  padding: 65px 45px 25px 45px;
+  background-color: #fff;
+  @include for-up {
+    padding: 127px 0px 60px 0px;
+  }
+  &__container {
+  }
+
+  &__title {
+  }
+
+  &__items {
+    padding-top: 55px;
+    @include for-up {
+      display: flex;
+      gap: 150px;
+    }
+  }
+}
+.story-card {
+  display: flex;
+  padding-bottom: 40px;
+  @include for-up {
+    max-width: 480px;
+    padding-top: 12px;
+  }
+  &__img-container {
+    margin-right: 20px;
+    padding-top: 4px;
+  }
+
+  &__img {
+    width: 40px;
+    height: 33px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    color: #111111;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    span {
+      text-decoration: underline;
+    }
+    &_desctop-text {
+      max-width: 280px;
+    }
+  }
+}

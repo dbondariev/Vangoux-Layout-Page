@@ -1,0 +1,74 @@
+.page-footer {
+  background: #fbfbfb;
+  padding: 35px 25px 25px 25px;
+  @include for-up {
+    padding: 0px 0px 0px 0px;
+  }
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // height: 130px;
+    @include for-up {
+      height: 0px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    background: $lightBlue;
+  }
+
+  &__img {
+  }
+
+  &__title {
+    padding-left: 18px;
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: $colorBlue;
+  }
+
+  &__menu {
+    display: none;
+    @include for-up {
+      display: flex;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    padding-right: 50px;
+  }
+
+  &__social {
+  }
+
+  &__social-link {
+    margin-right: 20px;
+  }
+  &__img-vincent {
+    width: 75px;
+    height: 70px;
+    position: relative;
+    bottom: -27px;
+    right: -13px;
+    @include for-up {
+      bottom: -0px;
+      right: -15px;
+    }
+  }
+}

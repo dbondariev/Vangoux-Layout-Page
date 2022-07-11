@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Mulish:400,600,700');
+
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'breakpoints.scss';
+@import 'common.scss';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'review.scss';
+@import 'wokflow.scss';
+@import 'features.scss';
+@import 'users.scss';
+@import 'purpose.scss';
+@import 'consultation.scss';
+@import 'stories.scss';
+@import 'footer.scss';
+@import 'mobile.scss';
+
+html,
+body {
+  font-family: 'Mulish';
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorBlack;
+}
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #eff5ffff;
+  @include for-up {
+    background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png')
+      50% 0 no-repeat;
+  }
+}
+
+[class*='__container'] {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  position: relative;
+}

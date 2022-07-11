@@ -1,0 +1,70 @@
+.btn-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: $colorBlue;
+  text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+  box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+}
+
+.title-section {
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 159%;
+  font-size: 30px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: -40px;
+    width: 80px;
+    height: 2px;
+    background-color: $colorBlue;
+    box-shadow: 0px 2px 0px 0px rgba(209, 225, 254, 1);
+    @media (max-width: 1024px) {
+      left: 0px;
+    }
+  }
+}
+
+.decor {
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    transform: rotate(90deg);
+    width: 45px;
+    height: 1px;
+    border: 1px dashed #1968fc;
+  }
+  &::after {
+    left: 39px;
+    bottom: -25px;
+  }
+  &::before {
+    left: 39px;
+    top: -24px;
+  }
+  @include for-up {
+    &::after {
+      transform: rotate(0deg);
+      width: 70px;
+      left: -75px;
+      top: 69px;
+    }
+    &::before {
+      transform: rotate(0deg);
+      width: 70px;
+      left: 325px;
+      top: 110px;
+    }
+  }
+}

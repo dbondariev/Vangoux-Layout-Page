@@ -1,0 +1,92 @@
+.reviews {
+  padding-top: 110px;
+  padding-bottom: 50px;
+  @include for-up {
+    padding-top: 161px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @include for-up {
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+}
+.review {
+  position: relative;
+  padding: 40px;
+  margin: 0px 35px;
+  background-color: #fff;
+  box-shadow: 0px 20px 60px 0px rgba(49, 69, 244, 0.1);
+
+  @include for-up {
+    flex: 1;
+    margin: 0px 0px;
+  }
+
+  &__person-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__person-data {
+    display: flex;
+    height: 100px;
+  }
+
+  &__photo {
+    margin-right: 20px;
+  }
+
+  &__indefication {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: $colorMain;
+  }
+
+  &__position {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 31px;
+    color: $colorBlue;
+  }
+
+  &__img-container {
+  }
+
+  &__img {
+    position: absolute;
+    top: 37px;
+    right: 32px;
+  }
+
+  &__text {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $colorMain;
+    padding-top: 40px;
+    @include for-up {
+      display: none;
+    }
+    &_desctop {
+      display: none;
+      @include for-up {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.wokflow {
+  padding-top: 79px;
+  padding-bottom: 82px;
+  margin: 0px 45px;
+  @include for-up {
+    margin: 0px 0px;
+    padding-top: 75px;
+    padding-bottom: 140px;
+  }
+  &__container {
+  }
+  &__title {
+  }
+
+  &__items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding-top: 70px;
+    @include for-up {
+      flex-direction: row;
+      gap: 79px;
+      padding-top: 55px;
+    }
+  }
+}
+
+.workflow-step {
+  position: relative;
+  padding: 35px 40px 40px 40px;
+  background: #fff;
+  box-shadow: 0px 20px 60px 0px rgba(49, 69, 244, 0.1);
+
+  @include for-up {
+    flex-basis: 320px;
+    padding-top: 40px;
+    &:nth-child(2) {
+      transform: translateY(39px);
+    }
+    &:last-child {
+      transform: translateY(82px);
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+  }
+
+  &__suptitle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $colorMain;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $colorBlue;
+  }
+
+  &__img-container {
+  }
+
+  &__img {
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 10px;
+    @include for-up {
+      padding-top: 20px;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    right: -7.5px;
+    bottom: -7.5px;
+  }
+}
